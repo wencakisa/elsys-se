@@ -1,1 +1,1 @@
-puts ARGV.map(&:to_i).reduce { |a, b| a + b }
+puts ARGV.map(&:to_i).reduce(&:+)
