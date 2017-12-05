@@ -1,0 +1,9 @@
+0. Create a new rails application
+1. Generate a controller that will handle our actions
+2. Map the controller actions to certain url paths
+3. Create a form for uploading a file in the view
+4. Implement a method (action) in the controller to handle this file upload
+5. Read the file that is uploaded
+6. Show its content in the view
+
+That's it!

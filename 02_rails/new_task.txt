@@ -1,0 +1,8 @@
+Talk about how to upload file in Rails? (CSV)
+
+New task:
+    1. Enter number
+    2. Iterate over CSV file
+    3. Take parts of "number" fields
+    4. Return max part
+

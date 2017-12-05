@@ -51,3 +51,7 @@ build-iPhoneSimulator/
 
 # RubyMine directory
 .idea/
+
+# Retake tasks of the last year's retake exam
+retake_tasks/
+
