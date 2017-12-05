@@ -3,73 +3,73 @@ require 'rome_converter'
 RSpec.describe RomeConverter do
   let(:converter) { RomeConverter.new }
 
-  describe '#to_roman' do
+  describe '#to_rome' do
     it "returns empty string on 0" do
-      expect(converter.to_roman 0).to eq ''
+      expect(converter.to_rome 0).to eq ''
     end
 
     it "converts 1 to 'I'" do
-      expect(converter.to_roman 1).to eq 'I'
+      expect(converter.to_rome 1).to eq 'I'
     end
 
     it "converts 2 to 'II'" do
-      expect(converter.to_roman 2).to eq 'II'
+      expect(converter.to_rome 2).to eq 'II'
     end
 
     it "converts 3 to 'III'" do
-      expect(converter.to_roman 3).to eq 'III'
+      expect(converter.to_rome 3).to eq 'III'
     end
 
     it "converts 4 to 'IV'" do
-      expect(converter.to_roman 4).to eq 'IV'
+      expect(converter.to_rome 4).to eq 'IV'
     end
 
     it "converts 5 to 'V'" do
-      expect(converter.to_roman 5).to eq 'V'
+      expect(converter.to_rome 5).to eq 'V'
     end
 
     it "converts 9 to 'IX'" do
-      expect(converter.to_roman 9).to eq 'IX'
+      expect(converter.to_rome 9).to eq 'IX'
     end
 
     it "converts 10 to 'X'" do
-      expect(converter.to_roman 10).to eq 'X'
+      expect(converter.to_rome 10).to eq 'X'
     end
 
     it "converts 40 to 'XL'" do
-      expect(converter.to_roman 40).to eq 'XL'
+      expect(converter.to_rome 40).to eq 'XL'
     end
 
     it "converts 50 to 'L'" do
-      expect(converter.to_roman 50).to eq 'L'
+      expect(converter.to_rome 50).to eq 'L'
     end
 
     it "converts 90 to 'XC'" do
-      expect(converter.to_roman 90).to eq 'XC'
+      expect(converter.to_rome 90).to eq 'XC'
     end
 
     it "converts 100 to 'C'" do
-      expect(converter.to_roman 100).to eq 'C'
+      expect(converter.to_rome 100).to eq 'C'
     end
 
     it "converts 400 to 'CD'" do
-      expect(converter.to_roman 400).to eq 'CD'
+      expect(converter.to_rome 400).to eq 'CD'
     end
 
     it "converts 500 to 'D'" do
-      expect(converter.to_roman 500).to eq 'D'
+      expect(converter.to_rome 500).to eq 'D'
     end
 
     it "converts 900 to 'CM'" do
-      expect(converter.to_roman 900).to eq 'CM'
+      expect(converter.to_rome 900).to eq 'CM'
     end
 
     it "converts 1000 to 'M'" do
-      expect(converter.to_roman 1000).to eq 'M'
+      expect(converter.to_rome 1000).to eq 'M'
     end
 
     it "converts 2017 to 'MMXVII'" do
-      expect(converter.to_roman 2017).to eq 'MMXVII'
+      expect(converter.to_rome 2017).to eq 'MMXVII'
     end
   end
 

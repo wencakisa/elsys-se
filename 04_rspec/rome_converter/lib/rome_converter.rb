@@ -1,5 +1,7 @@
+# PUT YOUR OWN FILE HERE
+
 class RomeConverter
-  ROMAN_NUMBERS = {
+  ROME_NUMBERS = {
     1000 => 'M',
     900 => 'CM',
     500 => 'D',
@@ -15,16 +17,16 @@ class RomeConverter
     1 => 'I'
   }
 
-  def to_roman dec_num
-    roman = ''
-    ROMAN_NUMBERS.each do |value, letter|
-      roman << letter * (dec_num / value)
+  def to_rome dec_num
+    rome = ''
+    ROME_NUMBERS.each do |value, letter|
+      rome << letter * (dec_num / value)
       dec_num %= value
     end
-    roman
+    rome
   end
 
-  def to_dec roman_str
+  def to_dec rome_str
     0
   end
 end
