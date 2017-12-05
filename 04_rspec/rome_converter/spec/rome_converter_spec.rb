@@ -4,7 +4,7 @@ RSpec.describe RomeConverter do
   let(:converter) { RomeConverter.new }
 
   describe '#to_rome' do
-    it "returns empty string on 0" do
+    it "converts 0 to empty string" do
       expect(converter.to_rome 0).to eq ''
     end
 
@@ -74,7 +74,7 @@ RSpec.describe RomeConverter do
   end
 
   describe '#to_dec' do
-    it "returns 0 on empty string" do
+    it "converts empty string to 0" do
       expect(converter.to_dec '').to eq 0
     end
 
